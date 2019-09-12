@@ -23,7 +23,6 @@ $(function () {
     });
 });
 
-    $(window).resize(function() {
         if ($(window).width() < 1230 ) {
             $('ul li').removeClass("mx-5");
             $('ul li').addClass("mx-3");
@@ -31,4 +30,3 @@ $(function () {
                 if ($(window).width() < 991 ) {
             $('ul li').removeClass("d-flex");
         }
-});
