@@ -131,7 +131,7 @@ hr {
 	min-height:1200px;
 			background-image: url(img/back_blur.png);
 		background-attachment: fixed;
-	background-color: rgba(48,58,69,0.1);
+	background-color: rgba(48,58,69,0.9);
 	background-blend-mode: overlay;
 }
 .photos .wrapper h1 {

@@ -11,6 +11,9 @@
 .inf {
 	margin-top:50px;
 }
+.nav-item a {
+	border-bottom: 1px solid #c01418;
+}
 }
 @media(max-width: 1602px){
 .line {
