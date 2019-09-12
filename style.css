@@ -3,8 +3,7 @@ padding:0;
 margin:0;
 }
 body {
-font-family: 'Open Sans', sans-serif;
-width:1920px;
+/*font-family: 'Open Sans', sans-serif;*/
 }
 header {
 background-color:white;
@@ -16,9 +15,6 @@ height:120px;
 display:flex;
 align-items:center;
 justify-content:space-around;
-}
-.header-top img {
-width:110px;
 }
 .header-top nav {
 /*padding:10px 20px 20px 20px;*/
@@ -61,7 +57,7 @@ line-height: 1.5;
 	color:black;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
-	 padding: 15px 50px;
+	 padding: 10px 45px;
 	border-radius: 2px;
 	background-color: #ffca1a;/*rgba(251,203,42,1);*/
 	cursor: pointer;
@@ -89,6 +85,7 @@ line-height: 1.5;
 text-align:center;
 color: #003a70;
 font-weight: 300;
+font-size: 33px;
 }
 hr {
 	width: 2.5%;
@@ -118,7 +115,7 @@ hr {
 	color:#313639;
 	margin: 5px 0;
 	text-align: justify;
-	font-size: 22px;
+	font-size: 21px;
 } 
 .lo {
 	padding-top:50px !important;
@@ -132,6 +129,16 @@ hr {
 .photos {
     width: 100%;
 	min-height:1200px;
+			background-image: url(img/back_blur.png);
+		background-attachment: fixed;
+	background-color: rgba(48,58,69,0.9);
+	background-blend-mode: overlay;
+}
+.photos .wrapper h1 {
+	color:white;
+}
+.photos .wrapper hr {
+	background-color:white;
 }
 .grid {
 	display: grid;
@@ -141,6 +148,12 @@ hr {
 }
 .photo {
 	overflow: hidden;
+}
+.photo:hover {
+	transition: 0.2s ease;
+	/*border: 2px solid #5092ff;*/
+	box-shadow: 0px 1px 10px 1px #a0a0a0;
+	/*#ffed00;*/
 }
 .photo img {
 	width:100%;
@@ -158,10 +171,6 @@ hr {
 .photo4 {
 	grid-column:3/5;
 }
-.partners {
-	width: 100%;
-	background-color: rgba(249,249,249,0.9);;
-}
 .news_container {
 	min-height: 950px;
 	width:100%;
@@ -172,13 +181,14 @@ hr {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 0 auto;
-
+		align-items: center;
 }
 .news {
 	max-width: 680px;
-	min-height: 200px;
+	height: 200px;
 	margin-top: 30px;
 	box-shadow: inset 0px 0px 15px 1px rgba(150,150,150,0.1);
+   	overflow: hidden;
 }
 .news:hover {
 box-shadow: inset 0px 0px 15px 1px rgba(150,150,150,0.3);
@@ -189,7 +199,7 @@ box-shadow: inset 0px 0px 15px 1px rgba(150,150,150,0.5);
 }
 .news .text {
 	display: inline-block;
-	width:47%;
+	width:50%;
 	height:100%;
 	padding: 10px;
 }
@@ -232,6 +242,12 @@ font-family: 'Didact Gothic', sans-serif;
 	width: 400px;
 	text-align: center;
 }
+.line {
+	width:1px;
+	height:80px;
+	    background-color:#003a70;
+    transform: rotate(20deg);
+}
 .contacts_info h4 {
 	font-size: 20px;
 	color:rgb(51,51,51);
@@ -249,7 +265,7 @@ font-family: 'Didact Gothic', sans-serif;
 	color:#003a86;
 }
 .contacts_info p span {
-	color:orange;
+	color:#c01418;
 }
 .inf {
 	margin-top:150px;
@@ -357,7 +373,8 @@ h3.city-name {
 }
 /*-------------------ОТЗЫВЫ----------------------*/
 footer {
-    min-height: 150px;
+	width:100% !important;
+    min-height: 130px;
 	background-color: #e5e7e8; 
 	color:rgb(51, 51, 51);
 	text-align: center;
@@ -366,18 +383,19 @@ footer {
 }
 .wrapper-bot {
 	padding: 0;
-	height:150px;
+	height:130px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 footer span i{
 	text-decoration: underline;
+	color:#c01418;
 }
 footer span i:hover {
 	text-decoration: none;
 }
-footer button {
+footer .send_message {
 	background-color: rgba(255,255,255, 0);
 	color:#313639;
 	padding:15px 30px;
@@ -385,7 +403,7 @@ footer button {
 	border-radius: 5px;
 	font-size: 16px;
 }
-footer button:hover {
+footer .send_message:hover {
 	background-color: #313639;
 	color:white;
 	transition: 0.2s;
@@ -409,3 +427,33 @@ footer .icons img:hover {
 #toTop:hover {
 	opacity: .75;
 }
+/*-------------------BOOTSTRAP----------------------*/
+.container-fluid {
+	width:70%;
+	margin:0 auto;
+}
+.navbar {
+	background-color: white !important;
+}
+.nav-item {
+text-align: center;
+}
+.nav-item a {
+	color:#313639 !important;
+text-decoration:none;
+padding:15px;
+font-size:21px !important;
+font-family: 'Open Sans', sans-serif;
+}
+.nav-item a:hover {
+	color:#c01418 !important;
+transition: 0.2s;
+}
+.nav-item a:active {
+	text-shadow: 1px 1px 10px #656565 !important;
+    transition: 0.2s;
+}
+.brand-display {
+	display: none;
+}
+/*-------------------BOOTSTRAP----------------------*/

@@ -1,0 +1,19 @@
+@media(max-width: 991px){
+.brand-display {
+	display: block;
+}
+.brand-none {
+	display: none;
+}
+.contacts_info {
+	margin-top:50px;
+}
+.inf {
+	margin-top:50px;
+}
+}
+@media(max-width: 1602px){
+.line {
+	display: none;
+}
+}

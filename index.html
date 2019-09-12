@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset=utf-8>
-<title>FC CHG</title>
+<title>ФК Импульс</title>
+<link href="img/logo_sm.png" rel="shortcut icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
@@ -14,17 +17,34 @@
 </head>
 <body>
   <header id="main-menu">
-    <div class="header-top" >
-     <a href="index.html"><img src="img/logo.png"></a>
-     <nav>
-     <a href="#AboutUs">О нас</a>
-     <a href="#methods">Методики</a>
-     <a href="#gallery">Фото и видео</a>
-     <a href="#news">Новости</a>
-     <a href="#contacts">Контакты</a>
-     <a href="#reviews">Отзывы</a>
-     </nav>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-top">
+ <div class="container-fluid">
+  <a href="" class="navbar-brand brand-display"><img src="img/logo2.png" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-around">
+     <a href="index.html" class="navbar-brand brand-none"><img src="img/logo2.png" class="logo"></a>
+    <ul class="navbar-nav ">
+      <li class="nav-item mx-5 d-flex">
+       <a href="#AboutUs" class="nav-link align-self-center">О нас</a>
+      </li>
+      <li class="nav-item mx-5 d-flex">
+       <a href="#gallery" class="nav-link align-self-center">Фото и видео</a>
+      </li>
+      <li class="nav-item mx-5 d-flex">
+       <a href="#news" class="nav-link align-self-center">Новости</a>
+      </li>
+      <li class="nav-item mx-5 d-flex">
+       <a href="#contacts" class="nav-link align-self-center">Контакты</a>
+      </li>
+      <li class="nav-item mx-5 d-flex">
+       <a href="#reviews" class="nav-link align-self-center">Отзывы</a>
+      </li>
+     </ul>
     </div>
+    </div>
+   </nav>
     <div class="header-body">
      <h1>Занятия футболом для детей от 3-х лет</h1>
      <p>Физическое развитие и здоровое общение Черноголовки</p>
@@ -45,12 +65,6 @@
          </div>
   	</div>
   </div>
-<!--   <div class="methods" id="methods">
-  	<div class="wrapper">
-  		<h1>Наши методики</h1>
-  		<hr>
-  	</div>
-  </div> -->
   <div class="photos" id="gallery">
    <div class="wrapper">
    	<h1>Последние фото и видео</h1>
@@ -67,12 +81,6 @@
     </div>
    </div>
   </div>
-<!--   <div class="partners">
-  	<div class="wrapper">
-  		<h1>Партнеры</h1>
-		<hr>
-  	</div>
-  </div> -->
   <div class="news_container" id="news">
 	<div class="wrapper">
 		<h1>Новости</h1>
@@ -135,12 +143,14 @@
            +7 (903) 777-77-77<br>
            ежедневно с 11.00 до 21.00</p>
      </div>
+     <div class="line"></div>
      <div class="contacts_info">
      <img src="img/icon2.png">
        <h4>Адрес</h4><br>
        <p>142432, г. Черноголовка, ул. Центральная, д. 1<br>
           Поле рядом с «Южным» озером</p>
       </div>
+      <div class="line"></div>
      <div class="contacts_info">
     <img src="img/icon3.png">
        <h4>Обратная связь</h4><br>
@@ -187,17 +197,49 @@
    </div>
    <footer>
    <div class="wrapper wrapper-bot">
-   <button>Написать нам</button>
-     <span><i>FC Chernogolovka</i> - Молодёжный футбольный клуб г.Черноголовка.</span>
+   <button class="send_message" data-toggle="modal" data-target="#modal">Написать нам</button>
+     <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Свяжитесь с нами</h4>
+          <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Ваше Имя" required>
+            </div>
+            <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Ваш E-mail" required>
+            </div>
+            <div class="form-group">
+            <input type="phone" class="form-control" name="phone" placeholder="Ваш телефон" required>
+          </div>
+          <div class="form-group">
+            <textarea name="Message" class="form-control" id="message" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+     <span><i>ФК Импульс</i>, 2019. Все права защищены.</span>
        <div class="icons">
     <span>Мы в соцсетях:</span><br><br>
-    <a href="https://vk.com/"><img src="img/vk.png"></a>
-    <a href="https://instagram.com/"><img src="img/inst.png"></a>
-    <a href="https://facebook.com/"><img src="img/fb.png"></a>
+    <a href="https://vk.com/"><img src="img/vk_fill.png"></a>
+    <a href="https://instagram.com/"><img src="img/inst_fill.png"></a>
+    <a href="https://facebook.com/"><img src="img/ok_fill.png"></a>
     </div>
      </div>
    </footer>
    <div id="toTop" class="to-top"><img src="img/arrowup.png" alt="BackToTop"></div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
   <script src="libs/owl-carousel/owl.carousel.min.js"></script>
