@@ -58,7 +58,7 @@ line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
 	 padding: 10px 45px;
-	border-radius: 2px;
+	border-radius: 5px;
 	background-color: #ffca1a;/*rgba(251,203,42,1);*/
 	cursor: pointer;
 	border:none;
@@ -77,6 +77,7 @@ line-height: 1.5;
 	opacity: 1;
 }
 .wrapper {
+	position: relative;
 	width: 75%;
 	margin: 0 auto;
 		padding: 50px 0;
@@ -104,6 +105,9 @@ hr {
 	margin:0 auto;
 	text-align: center;
 }
+.info span {
+	text-transform: initial;
+}
 .info h3{
 	color: #003a86;
 	font-size: 15pt;
@@ -127,11 +131,12 @@ hr {
 }
 /*-------------*/
 .photos {
+		
     width: 100%;
 	min-height:1200px;
 			background-image: url(img/back_blur.png);
 		background-attachment: fixed;
-	background-color: rgba(48,58,69,0.9);
+	background-color: rgba(31,31,31,0.9);
 	background-blend-mode: overlay;
 }
 .photos .wrapper h1 {
@@ -170,6 +175,29 @@ hr {
 }
 .photo4 {
 	grid-column:3/5;
+}
+/*.all_photoscont {
+	width:100%;
+}*/
+.all_photos {
+	position: absolute;
+	top:55px;
+	right: 0;
+		background-color: rgba(255,255,255, 0);
+	border:1px solid white;
+	color:white;
+	padding:12px 28px;	
+	border-radius: 5px;
+	font-size: 16px;
+}
+.all_photos:hover {
+	background-color: white;
+	color:black;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.all_photos:active {
+		background-color: rgba(255,255,255, 0.5);
 }
 .news_container {
 	min-height: 950px;
@@ -268,11 +296,58 @@ font-family: 'Didact Gothic', sans-serif;
 	color:#c01418;
 }
 .inf {
-	margin-top:150px;
+	margin-top:130px;
 }
 .reviews {
 	min-height: 600px;
 	width:100%;
+}
+.feedback {
+    width: 100%;
+	min-height:850px;
+			background-image: url(img/feedback.jpg);
+		background-attachment: fixed;
+		background-position: center;
+	background-color: rgba(40,50,61,0.9);
+	background-blend-mode: overlay;
+}
+.feedback .wrapper h1 {
+	color:white;
+}
+.feedback .wrapper hr {
+	background-color:white;
+}
+.feedback-block {
+	width:600px;
+	margin: 0 auto;
+	background-color: white;
+	padding:40px 50px;
+}
+.feedback-block button {
+	color:black;
+	font-family: 'Montserrat', sans-serif;
+	 padding: 15px 20px;
+	border-radius: 5px;
+	background-color: #ffca1a;/*rgba(251,203,42,1);*/
+	cursor: pointer;
+	border:none;
+}
+.feedback-block button:hover {
+	background-color: rgba(251,210,71,1);
+}
+.feedback-block button:active {
+	background-color: #ffda5c;
+}
+.feedback-block input {
+	border: none;
+	border-bottom: 1px solid grey;
+}
+.feedback-block textarea {
+	border: none;
+	border-bottom: 1px solid grey;
+}
+.feedback-block .form-group {
+	margin: 20px 0;
 }
 /*-------------------ОТЗЫВЫ----------------------*/
 
@@ -444,6 +519,7 @@ text-decoration:none;
 padding:15px;
 font-size:21px !important;
 font-family: 'Open Sans', sans-serif;
+white-space: nowrap;
 }
 .nav-item a:hover {
 	color:#c01418 !important;
