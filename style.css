@@ -190,6 +190,9 @@ hr {
 	border-radius: 5px;
 	font-size: 16px;
 }
+.all_photos a {
+	color:white;
+}
 .all_photos:hover {
 	background-color: white;
 	color:black;
