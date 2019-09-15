@@ -303,11 +303,14 @@ font-family: 'Didact Gothic', sans-serif;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+/*		background-size: cover;*/
 	background-color: rgba(40,50,61,0.9);
 	background-blend-mode: overlay;
 }
 body:first-of-type .feedback	 { 
+	background-image: url(img/feedback.jpg);
+}
+html:root*.feedback	 { 
 	background-image: url(img/feedback.jpg);
 }
 .feedback .wrapper h1 {
