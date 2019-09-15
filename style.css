@@ -136,6 +136,8 @@ hr {
 		background-attachment: fixed;
 	background-color: rgba(31,31,31,0.9);
 	background-blend-mode: overlay;
+		    background-size: cover;
+		    		background-position: center;
 	padding-bottom: 50px;
 }
 .photos .wrapper h1 {
