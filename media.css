@@ -28,3 +28,8 @@
     background-image: url(img/feedback.jpg); 
   } 
 }
+@media(max-width: 1813px){
+.news_container .wrapper .flexcontainer a:first-child {
+	margin-top: 0;
+}
+}

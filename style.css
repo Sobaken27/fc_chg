@@ -213,6 +213,9 @@ hr {
 	box-shadow: inset 0px 0px 15px 1px rgba(150,150,150,0.1);
    	overflow: hidden;
 }
+.news_container .wrapper .flexcontainer a {
+	margin-top: 30px;
+}
 .news:hover {
 box-shadow: inset 0px 0px 15px 1px rgba(150,150,150,0.3);
 		transition: 0.2s;
