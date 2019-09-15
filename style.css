@@ -131,13 +131,12 @@ hr {
 }
 /*-------------*/
 .photos {
-		
     width: 100%;
-	min-height:1200px;
 			background-image: url(img/back_blur.png);
 		background-attachment: fixed;
 	background-color: rgba(31,31,31,0.9);
 	background-blend-mode: overlay;
+	padding-bottom: 50px;
 }
 .photos .wrapper h1 {
 	color:white;
@@ -148,7 +147,6 @@ hr {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
-	grid-auto-rows: 300px;
 	grid-gap:10px;
 }
 .photo {
@@ -180,18 +178,12 @@ hr {
 	width:100%;
 }*/
 .all_photos {
-	position: absolute;
-	top:55px;
-	right: 0;
 		background-color: rgba(255,255,255, 0);
 	border:1px solid white;
 	color:white;
 	padding:12px 28px;	
 	border-radius: 5px;
 	font-size: 16px;
-}
-.all_photos a {
-	color:white;
 }
 .all_photos:hover {
 	background-color: white;
@@ -308,9 +300,12 @@ font-family: 'Didact Gothic', sans-serif;
 .feedback {
     width: 100%;
 	min-height:850px;
-			background-image: url(img/feedback.jpg);
-		background-attachment: fixed;
+}
+body:first-of-type .feedback	 { 
+	background-image: url(img/feedback.jpg);
+	background-attachment: fixed;
 		background-position: center;
+		background-size: cover;
 		background-repeat: no-repeat;
 	background-color: rgba(40,50,61,0.9);
 	background-blend-mode: overlay;
