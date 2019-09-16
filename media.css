@@ -11,9 +11,6 @@
 .contacts_info:last-child {
 	margin-bottom:0px;
 }
-.inf {
-	margin-top:0;
-}
 .nav-item a {
 	border-bottom: 1px solid #c01418;
 }
@@ -31,5 +28,18 @@
 @media(max-width: 1813px){
 .news_container .wrapper .flexcontainer a:first-child {
 	margin-top: 0;
+}
+}
+@media(max-width: 1599px){
+.inf {
+	margin-top:0px;
+}
+}
+@media (pointer:coarse){
+.photos {
+	background-attachment: scroll;
+}
+.feedback {
+	    background-attachment: scroll;
 }
 }
