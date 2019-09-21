@@ -596,7 +596,11 @@ transition: 0.2s;
 }
 
 .loaderArea {
-	background: white;
+	background-image: url(img/back.jpg);
+		background-attachment: fixed;
+	background-color: rgba(31,31,31,0.9);
+	background-blend-mode: overlay;
+			background-position: center;
 	overflow: hidden;
 	position: fixed;
 	left: 0;
@@ -610,18 +614,18 @@ transition: 0.2s;
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    transform: scaleX(-1);
   }
   50% {
     -moz-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    transform: scaleX(1);
   }
   100% {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    transform: scaleX(-1);
   }
 }
