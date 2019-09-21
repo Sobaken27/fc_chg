@@ -7,6 +7,13 @@ $(document).ready(function () {
 			scrollTop: top
 		}, 1000);
 	});
+            if ($(window).width() < 1230 ) {
+            $('ul li').removeClass("mx-5");
+            $('ul li').addClass("mx-3");
+        }
+                if ($(window).width() < 991 ) {
+            $('ul li').removeClass("d-flex");
+        }
 });
 $(function () {
     $(window).scroll(function () {
@@ -22,11 +29,10 @@ $(function () {
         }, 2000);
     });
 });
+ $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
 
-        if ($(window).width() < 1230 ) {
-            $('ul li').removeClass("mx-5");
-            $('ul li').addClass("mx-3");
-        }
-                if ($(window).width() < 991 ) {
-            $('ul li').removeClass("d-flex");
-        }
