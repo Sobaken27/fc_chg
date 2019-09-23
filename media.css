@@ -17,10 +17,7 @@
 .nav-item a:first-child {
 	border-top: 1px solid #c01418;
 }
-/*.nav-item a:hover {
-	color:initial !important;
-}*/
-.nav-item a:active {
+.nav-item a:hover {
 	background-color: #c01418;
 	color:white !important;
 	transition: 0s;

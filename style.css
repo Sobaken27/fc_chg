@@ -510,7 +510,7 @@ font-family: 'Open Sans', sans-serif;
 white-space: nowrap;
 border-radius: 5px;
 }
-.nav-hover:hover {
+.nav-item a:hover {
 	color:#c01418 !important;
 transition: 0.2s;
 }
