@@ -17,6 +17,17 @@
 .nav-item a:first-child {
 	border-top: 1px solid #c01418;
 }
+/*.nav-item a:hover {
+	color:initial !important;
+}*/
+.nav-item a:active {
+	background-color: #c01418;
+	color:white !important;
+	transition: 0s;
+}
+.navbar {
+		background-color: rgba(255,255,255,0.9) !important;
+}
 }
 @media(max-width: 1602px){
 .line {

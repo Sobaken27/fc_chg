@@ -10,39 +10,35 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="libs/animate/animate.css">
-  <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="loaderArea">
+<!--   <div class="loaderArea">
    <img src="img/logo2.png" class="loader">
-</div>
+</div> -->
   <header id="main-menu">
  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-top">
  <div class="container-fluid">
   <a href="" class="navbar-brand brand-display"><img src="img/logo2.png" class="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-around">
+    <div class="collapse navbar-collapse justify-content-between">
      <a href="index.html" class="navbar-brand brand-none"><img src="img/logo2.png" class="logo"></a>
     <ul class="navbar-nav ">
       <li class="nav-item mx-5 d-flex">
-       <a href="#AboutUs" class="nav-link align-self-center">О нас</a>
+       <a href="#AboutUs" class="nav-link nav-hover align-self-center">О нас</a>
       </li>
       <li class="nav-item mx-5 d-flex">
-       <a href="#gallery" class="nav-link align-self-center">Фото и видео</a>
+       <a href="#gallery" class="nav-link nav-hover align-self-center">Фото и видео</a>
       </li>
       <li class="nav-item mx-5 d-flex">
-       <a href="#news" class="nav-link align-self-center">Новости</a>
+       <a href="#news" class="nav-link nav-hover align-self-center">Новости</a>
       </li>
       <li class="nav-item mx-5 d-flex">
-       <a href="#contacts" class="nav-link align-self-center">Контакты</a>
+       <a href="#contacts" class="nav-link nav-hover align-self-center">Контакты</a>
       </li>
       <li class="nav-item mx-5 d-flex">
-       <a href="#reviews" class="nav-link align-self-center">Отзывы</a>
+       <a href="#reviews" class="nav-link nav-hover align-self-center">Отзывы</a>
       </li>
      </ul>
     </div>
@@ -145,6 +141,9 @@
     </div></a>
     </div>
 	</div>
+        <div class="all_photoscont d-flex justify-content-center">
+     <a href="https://vk.com/public170365442"><button class="btn all_news">Больше новостей</button></a>
+     </div>
 </div>
     <div class="contacts" id="contacts">
      <div class="wrapper">
@@ -200,38 +199,97 @@
      </div>
    </div>
    <div class="reviews" id="reviews">
-   	<div class="wrapper">
-   		<h1>Отзывы</h1>
+    <div class="wrapper">
+      <h1>Отзывы</h1>
   <hr>
-    <div class="container">
-      <div class="block-one-example">
-        <div id="customNav" class="owl-my-nav"></div>
-        <div class="owl-carousel block-items">
-            <div class="item">
-              <div class="inner-testimonial">
-                <img src="img/for-reviews/client1.png" class="animated fadeIn full-opacity" alt="Клиент 1">
-                <h3 class="city-name">Иван, Москва</h3>
-                <p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="inner-testimonial">
-              <img src="img/for-reviews/client2.png" class="animated fadeIn full-opacity" alt="Клиент 2">
-                <h3 class="city-name">Светлана, Екатеринбург</h3>
-                <p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="inner-testimonial">
-                <img src="img/for-reviews/client3.png" class="animated fadeIn full-opacity" alt="Клиент 3">
-                <h3 class="city-name">Александр, Ярославль</h3>
-                <p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
-              </div>
-            </div>
-        </div>
-      </div><!-- .block-one-example -->
-    </div>    
+<div id="carouselReviews" class="carousel slide" data-ride="true">
+      <ol class="carousel-indicators">
+         <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselReviews" data-slide-to="1"></li>
+          <li data-target="#carouselReviews" data-slide-to="2"></li>
+          <li data-target="#carouselReviews" data-slide-to="3"></li>
+       </ol>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+                   <h2 class="review-author">
+         Лариса Уварова
+       </h2>
+      <div class="review">
+        Добрый вечер !!! Хочется сказать огромное спасибо всем тренерам футбольной школы за прекрасное отношение к детям, поход к каждому малышу свой, что очень порадовало. Сынуля в восторге, и это главное. Спасибо вам большое. Ходим к вам с большим удовольствием, и будем продолжать ходить.
+     </div>
+</div>
+ <div class="carousel-item">
+           <h2 class="review-author">
+      Игорь Минаев
+    </h2>
+    <div class="review">
+     Был день рождения сыночка!! Когда спросила, что понесем на угощение:)😁🍭🍬🍦🍩 ответ был "футбольные мячи!!⚽⚽⚽"сказано - сделано!!!" Сейчас болеем и сильно скучаем,но смотрим фоточки и все вспоминаем!! Спасибо, вам,ребята за ваш труд! Сергею Дмитриевичу преогромнейшее спасибо,за терпение, оно у вас просто космическое🚀🚀🚀!!!
    </div>
+</div>
+<div class="carousel-item">
+                <h2 class="review-author">
+          Мила Синицина
+        </h2>
+        <div class="review">
+         Все супер как всегда довольны , ребёнок с веселым настроением выходит из зала )
+      </div>
+  </div>
+   <div class="carousel-item">
+           <h2 class="review-author">
+      Игорь Минаев
+    </h2>
+    <div class="review">
+     Хочу ещё раз выразить благодарность организаторам турнира - ФШ Юниор Тюмень- Центральный район и лично Сергею Александровичу Ивашову! Даже не представляю сколько сил, терпения, переживаний было вложено, чтобы у нас была возможность насладиться этим поистине футбольным праздником!!! Спасибо нашим тренерам за заботу о наших футболистах, поддержку и настрой на играх!!! Спасибо болельщикам за неистовую поддержку ребят, эти эмоции вдохновляли на победы! Ведь вряд ли будешь также болеть за кого-то ещё :) Голос был сорван, 2 дня хрипели 😂
+Спасибо соперникам за хорошую игру и эмоции!
+Спасибо судьям за качественную и грамотную работу! Спасибо главному судье соревнований Илье Борисовичу Дорожкину за крутой календарь и организацию матчей! Детки успевали поесть, раскраситься, отдохнуть и снова в бой!
+Спасибо волонтёрам за помощь в создании и поддержании атмосферы праздника!
+Спасибо всем причастным (спонсорам, оператору, фотографу, ведущему всем кого забыл упомянуть)!!!
+Очень понравилось! Хотим ещё!!! 👍
+   </div>
+</div>
+ </div>
+ <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
+   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+  </a>
+</div>
+    </div> 
+    <div class="all_photoscont d-flex justify-content-center">
+   <button class="send_review" data-toggle="modal" data-target="#modal1">Оставить отзыв</button>
+ </div>
+     <div class="modal fade" id="modal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Оставьте свой отзыв</h4>
+          <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Ваше Имя" required>
+            </div>
+            <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Ваш E-mail" required>
+            </div>
+            <div class="form-group">
+            <input type="phone" class="form-control" name="phone" placeholder="Ваш телефон" required>
+          </div>
+          <div class="form-group">
+            <textarea name="Message" class="form-control" id="message" cols="30" rows="10" placeholder="Ваш отзыв" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>   
    </div>
    <footer>
    <div class="wrapper wrapper-bot">
@@ -279,9 +337,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
-  <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/custom.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ $(document).ready(function () {
         }
                 if ($(window).width() < 991 ) {
             $('ul li').removeClass("d-flex");
+            $('.nav-hover').removeClass("nav-hover");
         }
 });
 $(function () {
