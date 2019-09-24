@@ -7,13 +7,18 @@ $(document).ready(function () {
 			scrollTop: top
 		}, 1000);
 	});
-            if ($(window).width() < 1230 ) {
+            if ($(window).width() < 1333 ) {
             $('ul li').removeClass("mx-5");
+            $('ul li').addClass("mx-4");
+        }
+                if ($(window).width() < 1050 ) {
+            $('ul li').removeClass("mx-4");
             $('ul li').addClass("mx-3");
         }
                 if ($(window).width() < 991 ) {
             $('ul li').removeClass("d-flex");
         }
+
 });
 $(function () {
     $(window).scroll(function () {
