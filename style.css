@@ -97,7 +97,6 @@ hr {
 }
 .info{
 	max-width:1000px;
-
 	margin:0 auto;
 	text-align: center;
 }
@@ -435,6 +434,11 @@ margin: 0 auto;
 	background-color: rgba(49,54,57,0.7);
 	color:white;
 }
+.btn-review {
+	background-color: #ffca1a;
+	    border-color: #ffca1a;
+	    margin: 0 auto;
+}
 /*-------------------ОТЗЫВЫ----------------------*/
 footer {
 	width:100% !important;
@@ -548,19 +552,19 @@ background: linear-gradient(90deg,#c01418 0% 5%, #000 5% 10%,#c01418 10% 15%, #0
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
-    transform: scaleX(-1);
+    transform: scaleX(1);
   }
   50% {
     -moz-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
-    transform: scaleX(1);
+    transform: scaleX(-1);
   }
   100% {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
-    transform: scaleX(-1);
+    transform: scaleX(1);
   }
 }
 .custom-toggler.navbar-toggler {
