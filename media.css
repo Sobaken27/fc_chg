@@ -40,6 +40,12 @@
 .news_container .wrapper .flexcontainer a:first-child {
 	margin-top: 0;
 }
+.news_container .wrapper .flexcontainer a:nth-child(5) {
+	display: none;
+}
+.news_container .wrapper .flexcontainer a:nth-child(6) {
+	display: none;
+}
 }
 @media(max-width: 1599px){
 .inf {
