@@ -13,8 +13,9 @@
 }
 .nav-item a {
 	border-bottom: 1px solid #c01418;
-	border-left: none;
-	border-right: none;
+	border-left: none !important;
+	border-right: none !important;
+	outline: none;
 }
 .nav-item a:first-child {
 	border-top: 1px solid #c01418;
