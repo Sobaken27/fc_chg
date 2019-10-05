@@ -13,6 +13,8 @@
 }
 .nav-item a {
 	border-bottom: 1px solid #c01418;
+	border-left: none;
+	border-right: none;
 }
 .nav-item a:first-child {
 	border-top: 1px solid #c01418;
