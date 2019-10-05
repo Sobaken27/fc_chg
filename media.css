@@ -14,9 +14,9 @@
 .nav-item a {
 	border-bottom: 1px solid #c01418;
 }
-.nav-item a:first-child {
+/*.nav-item a:first-child {
 	border-top: 1px solid #c01418;
-}
+}*/
 .nav-item a:hover {
 	background-color: #c01418;
 	color:white !important;
@@ -58,10 +58,5 @@
 }
 .feedback {
 	    background-attachment: scroll;
-}
-}
-@media(max-width: 321px){
-.nav-item a:first-child {
-	border-top: none;
 }
 }
