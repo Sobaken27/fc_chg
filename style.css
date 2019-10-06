@@ -93,12 +93,11 @@ hr {
 }
 .AboutUs {
 	width: 100%;
-	min-height:750px;
+	min-height:1400px;
 }
 .info{
 	max-width:1000px;
 	margin:0 auto;
-	text-align: center;
 }
 .info span {
 	text-transform: initial;
@@ -109,15 +108,35 @@ hr {
 	text-transform: uppercase;
 	padding:0 0 20px 0;
 	font-weight: 600;
+		text-align: center;
 }
 .info p{
 	color:#313639;
 	margin: 5px 0;
 	text-align: justify;
 	font-size: 21px;
+}
+.info p a {
+		color: #313639;
+}
+.info p a:hover {
+	text-decoration: underline;
+	color:#003a86;
+}
+.info ul {
+	padding-left: 30px; 
+}
+.info ul li {
+	color:#313639;
+	margin: 5px 0;
+	font-size: 21px;
+	padding: 5px 5px 0 5px;
 } 
 .lo {
 	padding-top:50px !important;
+}
+.lol {
+	padding-top:30px !important;
 }
 .photos {
     width: 100%;
@@ -295,8 +314,11 @@ font-family: 'Didact Gothic', sans-serif;
 	text-decoration: underline;
 	color:#003a86;
 }
-.contacts_info p span {
-	color:#c01418;
+.contacts_info p span img {
+	width:25px;
+}
+.underline:hover {
+	text-decoration: underline;
 }
 .inf {
 	margin-top:130px;
@@ -472,7 +494,7 @@ footer .send_message:hover {
 	transition: 0.2s;
 }
 footer .icons img {
-	opacity: 0.8;
+	opacity: 0.9;
 }
 footer .icons img:hover {
 	opacity: 1;
