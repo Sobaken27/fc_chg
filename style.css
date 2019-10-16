@@ -317,9 +317,16 @@ font-family: 'Didact Gothic', sans-serif;
 .contacts_info p span img {
 	width:25px;
 }
-.underline:hover {
+.contacts_phone p a{
 	text-decoration: underline;
+	color:#003a86;
 }
+.contacts_phone p a:hover{
+	text-decoration: none;
+}
+/*.underline:hover {
+	text-decoration: underline;
+}*/
 .inf {
 	margin-top:130px;
 }
