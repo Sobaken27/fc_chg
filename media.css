@@ -62,4 +62,7 @@
 .feedback {
 	    background-attachment: scroll;
 }
+header {
+	background-attachment: scroll;
+}
 }
