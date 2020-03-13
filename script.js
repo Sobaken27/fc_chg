@@ -7,13 +7,17 @@ $(document).ready(function () {
 			scrollTop: top
 		}, 1000);
 	});
-            if ($(window).width() < 1333 ) {
+            if ($(window).width() < 1550 ) {
             $('ul li').removeClass("mx-5");
             $('ul li').addClass("mx-4");
         }
-                if ($(window).width() < 1050 ) {
+                if ($(window).width() < 1228 ) {
             $('ul li').removeClass("mx-4");
             $('ul li').addClass("mx-3");
+        }
+                if ($(window).width() < 1120 ) {
+            $('ul li').removeClass("mx-3");
+            $('ul li').addClass("mx-2");
         }
                 if ($(window).width() < 991 ) {
             $('ul li').removeClass("d-flex");
