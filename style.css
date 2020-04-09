@@ -573,7 +573,7 @@ font-weight: ;
 transition: 0.2s;
 }
 .nav-item a:active {
-	text-shadow: 1px 1px 20px #656565 !important;
+	text-shadow: 1px 1px 20px rgba(102, 102, 102,0.8) !important;
     transition: 0.2s;
 }
 .brand-display {
