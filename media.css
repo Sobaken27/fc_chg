@@ -1,4 +1,4 @@
-@media(max-width: 991px){
+@media(max-width: 992px){
 .brand-display {
 	display: block;
 }
@@ -66,7 +66,6 @@
 @media(max-width: 1213px){
 .news {
 	max-width: 680px;
-
 }
 .news_container .wrapper .flexcontainer a:nth-child(3){
 	margin-top: 30px;
@@ -98,5 +97,10 @@
 }
 header {
 	background-attachment: scroll;
+}
+}
+@media(max-width: 1200px){
+.disapier {
+	display: none;
 }
 }

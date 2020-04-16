@@ -6,9 +6,9 @@ body {
 
 }
 header {
-background-image: url(img/back1.jpg);
+    background-image: url(img/back.jpg);
 	background-attachment: fixed;
-	background-color: rgba(48,58,69,0.9);
+	background-color: rgba(31,31,31,0.9);
 	background-blend-mode: overlay;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -206,10 +206,6 @@ hr {
 .photo4 {
 	grid-column:3/5;
 }
-.photo4 img{
-	width:100%;
-	max-height:296px;
-}
 .photo5 {
 
 }
@@ -350,11 +346,11 @@ font-family: 'Didact Gothic', sans-serif;
 }
 .contacts_info p a{
 	text-decoration: none;
-	color: black;
+	color:#003a86;
 }
 .contacts_info p a:hover {
 	text-decoration: underline;
-	color:#003a86;
+	
 }
 .contacts_info p span img {
 	width:25px;
