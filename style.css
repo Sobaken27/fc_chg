@@ -10,7 +10,7 @@ header {
 	background-attachment: fixed;
 	background-color: rgba(48,58,69,0.9);
 	background-blend-mode: overlay;
-	
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 /*.header-top {
